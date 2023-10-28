@@ -9,7 +9,7 @@ import ErrorElement from "./pages/ErrorElement";
 import { loader as landingLoader } from "./pages/Landing";
 import Hotels from "./pages/Hotels";
 import SingleHotel from "./pages/SingleHotel";
-import { loader as SingleHotelLoader } from "./pages/SingleHotel"; 
+import { loader as SingleHotelLoader } from "./pages/SingleHotel";
 function App() {
   const router = createBrowserRouter([
     {
@@ -20,24 +20,24 @@ function App() {
         {
           index: true,
           element: <Landing />,
-          loader:landingLoader,
-          errorElement:<ErrorElement/>,
+          loader: landingLoader,
+          errorElement: <ErrorElement />,
         },
         {
           path: "about",
           element: <About />,
-          errorElement:<ErrorElement />
+          errorElement: <ErrorElement />,
         },
         {
           path: "hotels",
           element: <Hotels />,
-          errorElement:<ErrorElement />
+          errorElement: <ErrorElement />,
         },
         {
           path: "hotels/:id",
           element: <SingleHotel />,
-          loader:SingleHotelLoader,
-          errorElement:<ErrorElement />
+          loader: SingleHotelLoader,
+          errorElement: <ErrorElement />,
         },
       ],
     },

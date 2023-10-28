@@ -13,8 +13,8 @@ const links = [
   },
   {
     id: 1,
-    url: "/products",
-    text: "products",
+    url: "/hotels",
+    text: "hotels",
   },
 ];
 const NavLinks = () => {
