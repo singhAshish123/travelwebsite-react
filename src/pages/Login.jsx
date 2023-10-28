@@ -9,7 +9,7 @@ const Login = () => {
         <FormInput type="email" label="email" name="email" />
         <FormInput type="password" label="password" name="password" />
         <div className="mt-4">
-          <SubmitBtn />
+          <SubmitBtn text="Submit" />
         </div>
         <p className="text-center">
           Not a member yet?
