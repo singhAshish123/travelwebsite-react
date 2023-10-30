@@ -10,6 +10,9 @@ import { loader as landingLoader } from "./pages/Landing";
 import Hotels from "./pages/Hotels";
 import SingleHotel from "./pages/SingleHotel";
 import { loader as SingleHotelLoader } from "./pages/SingleHotel";
+import { loader as HotelLoader } from "./pages/Hotels";
+
+import { store } from "./store";
 function App() {
   const router = createBrowserRouter([
     {
@@ -32,6 +35,7 @@ function App() {
           path: "hotels",
           element: <Hotels />,
           errorElement: <ErrorElement />,
+          loader:HotelLoader
         },
         {
           path: "hotels/:id",

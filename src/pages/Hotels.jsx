@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import HotelsContainer from "../components/HotelsContainer";
+import { customFetch } from "../utils";
+
+export const loader = async () => {
+  const response = await customFetch("/hotels");
+  const hotels = response.data;
+  return { hotels };
+};
 
 const Hotels = () => {
   return (
-    <div>
-      Hotel Page      
-    </div>
-  )
-}
+    <>
+      <HotelsContainer />
+    </>
+  );
+};
 
-export default Hotels
+export default Hotels;
